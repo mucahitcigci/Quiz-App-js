@@ -1,0 +1,102 @@
+[
+  {
+    "soru": "Bir yarışta ikinciyi geçersen, kaçıncı olursun?",
+    "secenekler": {
+      "a": "Birinci",
+      "b": "İkinci",
+      "c": "Üçüncü",
+      "d": "Yarış biter"
+    },
+    "dogruCevap": "b"
+  },
+  {
+    "soru": "Hangi kelime her zaman yanlış yazılır?",
+    "secenekler": {
+      "a": "Fevalgum",
+      "b": "Yanlış",
+      "c": "Hata",
+      "d": "Süphe"
+    },
+    "dogruCevap": "b"
+  },
+  {
+    "soru": "Bir çiftçinin 17 koyunu vardı. Sürü salgını nedeniyle 9 tanesi hariç hepsi öldü. Çiftçinin kaç koyunu kaldı?",
+    "secenekler": {
+      "a": "17",
+      "b": "8",
+      "c": "9",
+      "d": "0"
+    },
+    "dogruCevap": "c"
+  },
+  {
+    "soru": "Bazı aylar 30, bazıları 31 çeker; kaç ayda 28 gün vardır?",
+    "secenekler": {
+      "a": "Sadece 1 (Şubat)",
+      "b": "Hiçbirinde",
+      "c": "Tüm aylarda",
+      "d": "Sadece artık yıllarda"
+    },
+    "dogruCevap": "c"
+  },
+  {
+    "soru": "Sadece bir kibrit çöpünüz var ve içinde bir gaz lambası, bir gaz sobası ve bir mum bulunan soğuk bir odaya girdiniz. Önce hangisini yakarsınız?",
+    "secenekler": {
+      "a": "Gaz lambasını",
+      "b": "Mumu",
+      "c": "Gaz sobasını",
+      "d": "Kibriti"
+    },
+    "dogruCevap": "d"
+  },
+  {
+    "soru": "Eğer 2 tavuk, 2 günde 2 yumurta yumurtlarsa, 4 tavuk 4 günde kaç yumurta yumurtlar?",
+    "secenekler": {
+      "a": "4",
+      "b": "8",
+      "c": "16",
+      "d": "2"
+    },
+    "dogruCevap": "b"
+  },
+  {
+    "soru": "Bir adam, bir otelin 10. katında yaşıyor. Her sabah asansörle lobiye inip işe gidiyor. Akşam döndüğünde ise, eğer asansörde başka biri varsa 10. kata çıkıyor. Eğer asansörde yalnızsa 7. kata çıkıp kalan 3 katı merdivenle çıkıyor. Neden?",
+    "secenekler": {
+      "a": "Spor yapmak için",
+      "b": "Adam çok kısa ve sadece 7. katın düğmesine yetişebiliyor",
+      "c": "Asansör 7. kattan sonra bozuluyor",
+      "d": "10. katın düğmesi kirli"
+    },
+    "dogruCevap": "b"
+  },
+  {
+    "soru": "Bir uçak Türkiye ile Suriye sınırına düşerse, yaralılar nereye gömülür?",
+    "secenekler": {
+      "a": "Türkiye'ye",
+      "b": "Suriye'ye",
+      "c": "Tam sınıra",
+      "d": "Yaralılar gömülmez"
+    },
+    "dogruCevap": "d"
+  },
+  {
+    "soru": "5, 10, 15, 20, 25, ... Serideki bir sonraki sayı nedir?",
+    "secenekler": {
+      "a": "20",
+      "b": "40",
+      "c": "30",
+      "d": "50"
+    },
+    "dogruCevap": "c"
+  },
+  {
+    "soru": "Elinizde 10 parmağınız var. 10 elde kaç parmak vardır?",
+    "secenekler": {
+      "a": "100",
+      "b": "50",
+      "c": "10",
+      "d": "2"
+    },
+    "dogruCevap": "b"
+  }
+]
