@@ -1,4 +1,3 @@
-// DOM yüklendiğinde (sayfa hazır olduğunda) bu fonksiyon çalışsın
 document.addEventListener("DOMContentLoaded", () => {
   // --- 1. GEREKLİ DEĞİŞKENLER VE HTML ELEMENTLERİ ---
 
@@ -6,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let mevcutSoruIndex = 0;
   let kullaniciCevaplari = [];
 
-  // YENİ: Zamanlayıcı için global değişken
-  let timerInterval = null; // Zamanlayıcıyı durdurmak için ID'sini tutar
-  let toplamSure = 1 * 60; // 15 dakika * 60 saniye = 900 saniye
+  // Zamanlayıcı için global değişken
+  let timerInterval = null;
+  let toplamSure = 15 * 60; // 15 dakika * 60 saniye = 900 saniye
 
   // HTML'den gerekli elementleri seçiyoruz
   const soruMetniElementi = document.getElementById("question-text");
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ilerlemeSayaciElementi = document.getElementById("question-counter");
   const ilerlemeYuzdeElementi = document.getElementById("progress-percent");
 
-  // YENİ: Zamanlayıcı ve Modal elementleri
+  // Zamanlayıcı ve Modal elementleri
   const timerDisplayElement = document.getElementById("timer-display");
   const sureBittiModalElement = document.getElementById("sureBittiModal");
   // Bootstrap Modal'ını JS ile kontrol etmek için bir örnek (instance) oluştur
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       kullaniciCevaplari = new Array(tumSorular.length).fill(null);
       soruyuGoster(mevcutSoruIndex);
 
-      // YENİ: Sorular yüklendikten sonra zamanlayıcıyı başlat
+      //Sorular yüklendikten sonra zamanlayıcıyı başlat
       startTimer();
     })
     .catch((error) => {
@@ -98,9 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 5. Buton Durumlarını Yönetme
-
-    // DEĞİŞİKLİK: 'sonrakiSoruButonu.disabled = (mevcutCevap === null);' satırı kaldırıldı.
-    // Artık 'Sonraki' butonu her zaman aktif olacak.
     sonrakiSoruButonu.disabled = false;
 
     // 'Önceki' butonu ilk soruda pasif olmalı
@@ -130,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
       soruyuGoster(mevcutSoruIndex);
     } else {
       // Test bittiyse, zamanlayıcıyı durdur ve sonuçları göster
-      clearInterval(timerInterval); // YENİ
+      clearInterval(timerInterval);
       hesaplaVeSonuclariGoster();
     }
   });
@@ -156,12 +152,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // HTML'deki zamanlayıcıyı güncelle
       timerDisplayElement.innerHTML = `<i class="bi bi-stopwatch"></i> ${dakika}:${saniye}`;
-
-      // Eğer süre 0'dan büyükse, süreyi 1 azalt
       if (toplamSure > 0) {
         toplamSure--;
       } else {
-        // Süre bittiyse (toplamSure 0 veya altı)
         clearInterval(timerInterval); // Zamanlayıcıyı durdur
         timerDisplayElement.textContent = "Süre Bitti!";
 
@@ -175,10 +168,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000); // 1000ms = 1 saniye
   }
 
-  // --- 6. QUIZ BİTİŞ FONKSİYONU (Eski 5. fonksiyon) ---
+  // --- 6. QUIZ BİTİŞ FONKSİYONU  ---
 
   function hesaplaVeSonuclariGoster() {
-    // Zamanlayıcıyı her ihtimale karşı durdur
     clearInterval(timerInterval);
 
     let kullaniciSkoru = 0;
@@ -210,10 +202,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <button class="btn btn-primary btn-lg" onclick="location.reload()">
                 <i class="bi bi-arrow-repeat me-1"></i> Testi Yeniden Başlat
             </button>
-            <button class="btn btn-secondary btn-lg ms-2" onclick="location.href='index.html'">
+            <button class="btn btn-secondary btn-lg ms-4" onclick="location.href='dashboard.html'">
                 <i class="bi bi-house-door-fill me-1"></i> Ana Menüye Dön
             </button>
         </div>
     `;
   }
-}); // DOMContentLoaded sonu
+});
