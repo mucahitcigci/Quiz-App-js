@@ -54,12 +54,12 @@ Bu proje, `fetch` API kullanarak `sorular.json` dosyasını okur. Tarayıcı gü
 
 1.  Bu repoyu klonlayın (veya dosyaları ZIP olarak indirin):
     ```bash
-    git clone [https://github.com/SENIN-KULLANICI-ADIN/PROJE-ADIN.git](https://github.com/SENIN-KULLANICI-ADIN/PROJE-ADIN.git)
+    git clone [https://github.com/mucahitcigci/Quiz-App-js](https://github.com/mucahitcigci/Quiz-App-js)
     ```
 
 2.  Proje klasörüne gidin:
     ```bash
-    cd PROJE-ADIN
+    cd Quiz-App-js
     ```
 
 3.  Bir yerel sunucu başlatın. En kolay yolu VS Code kullanıyorsanız **"Live Server"** eklentisini kurmaktır.
